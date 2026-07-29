@@ -120,7 +120,7 @@ private:
 
         esp_lcd_panel_init(panel);
         esp_lcd_panel_invert_color(panel, DISPLAY_INVERT_COLOR);
-        // 硬件不旋转，交给 LVGL 软件旋转处理（240x240 方屏硬件旋转行为不一致）
+        // Hardware stays default, LVGL software rotation handles orientation
         esp_lcd_panel_swap_xy(panel, false);
         esp_lcd_panel_mirror(panel, false, false);
 #ifdef  LCD_TYPE_GC9A01_SERIAL
@@ -128,7 +128,6 @@ private:
 #endif
         display_ = new SpiLcdDisplay(panel_io, panel,
                                     DISPLAY_WIDTH, DISPLAY_HEIGHT, DISPLAY_OFFSET_X, DISPLAY_OFFSET_Y, false, false, false);
-        // 使用 LVGL 软件旋转：原来的「左」变成「下」→ 左转 90° (270° CW)
         lv_display_set_rotation(lv_display_get_default(), LV_DISPLAY_ROTATION_270);
     }
 
