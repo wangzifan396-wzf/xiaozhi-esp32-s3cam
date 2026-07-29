@@ -152,8 +152,8 @@ private:
         config.pin_pwdn = CAMERA_PIN_PWDN;
         config.pin_reset = CAMERA_PIN_RESET;
         config.xclk_freq_hz = XCLK_FREQ_HZ;
-        config.pixel_format = PIXFORMAT_RGB565;
-        config.frame_size = FRAMESIZE_VGA;
+        config.pixel_format = PIXFORMAT_JPEG;    // JPEG saves 550KB vs RGB565
+        config.frame_size = FRAMESIZE_VGA;        // 640x480, same quality, smaller buffer
         config.jpeg_quality = 12;
         config.fb_count = 1;
         config.fb_location = CAMERA_FB_IN_PSRAM;
