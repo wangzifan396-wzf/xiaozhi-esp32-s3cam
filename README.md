@@ -22,6 +22,12 @@
 | 喇叭 | 8Ω 2~3W | — |
 | 存储 | 板载 MicroSD 卡槽 | SDMMC 1-bit |
 
+### 实物图
+
+| 正面 | 背面 | 通电运行 |
+|------|------|----------|
+| ![正面](docs/board-front.jpg) | ![背面](docs/board-back.jpg) | ![通电](docs/board-powered.jpg) |
+
 ## 引脚接线
 
 | 模块 | 信号 | GPIO |
