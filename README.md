@@ -24,9 +24,12 @@
 
 ### 实物图
 
-| 正面 | 背面 | 通电运行 |
-|------|------|----------|
-| ![正面](docs/board-front.jpg) | ![背面](docs/board-back.jpg) | ![通电](docs/board-powered.jpg) |
+<div align="center">
+  <img src="docs/board-front.jpg" width="30%" alt="正面" />
+  <img src="docs/board-back.jpg" width="30%" alt="背面" />
+  <img src="docs/board-powered.jpg" width="30%" alt="通电运行" />
+  <p><sub>正面 · 背面 · 通电运行</sub></p>
+</div>
 
 ## 引脚接线
 
