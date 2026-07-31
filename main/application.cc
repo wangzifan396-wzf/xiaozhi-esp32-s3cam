@@ -9,6 +9,7 @@
 #include "mcp_server.h"
 #include "memory_mcp.h"
 #include "advanced_mcp.h"
+#include "wifi_fileserver.h"
 #include "assets.h"
 #include "settings.h"
 #include "chat_logger.h"
@@ -265,6 +266,7 @@ void Application::Run() {
 
 void Application::HandleNetworkConnectedEvent() {
     ESP_LOGI(TAG, "Network connected");
+    WifiFileServer::Start();
     auto state = GetDeviceState();
 
     if (state == kDeviceStateStarting || state == kDeviceStateWifiConfiguring) {
