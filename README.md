@@ -2,6 +2,8 @@
 
 基于 [78/xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) 开源项目，针对 **ESP32-S3 CAM 开发板** 深度定制的增强版本。
 
+使用 AI 助手配置同款开发板时，可以加载 [小智 ESP32-S3 CAM 配置 Skill](.agents/skills/xiaozhi-s3cam-setup/SKILL.md)，核对接线、编译选项和双唤醒词设置。
+
 👉 [人类：给 AI 装摄像头 vs AI：当场发现主人三天没洗头【bilibili】](https://www.bilibili.com/video/BV1bpjgzKEhd/)
 
 小智 AI 聊天机器人作为语音交互入口，利用 Qwen / DeepSeek 等大模型的 AI 能力，通过 MCP 协议实现多端控制。
